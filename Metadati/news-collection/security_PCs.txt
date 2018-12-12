@@ -1,0 +1,21 @@
+# 
+# http://news.bbc.co.uk/2/hi/technology/8636985.stm
+# 
+
+Security update hits Windows PCs.
+
+Thousands of PCs around the world have been paralysed by a security update that wrongly labelled part of Windows as a virus.
+The update was sent out by security firm McAfee and made affected PCs endlessly restart.
+Corporate customers of McAfee seemed to be hardest hit but some individuals reported problems too.
+McAfee apologised for the mistake and released a fix to ensure PCs started working again.
+Thousands hit
+The problems were caused by an update to the long list McAfee's anti-virus uses to identify which programs are malicious.
+McAfee's 5958 update wrongly identified the Windows svchost.exe file as the wecorl.a virus. This worm tries to replace an existing svchost file with its own version to help it take over a machine.
+The update wrongly labelled svchost as the virus and then quarantined it. This caused many PCs to crash as Windows uses many copies of the file to keep the operating system going.
+Computers inside businesses running Windows XP with service pack 3 applied were the hardest hit according to reports. The University of Michigan said 8,000 of its 25,000 computers were hit by the faulty update.
+The SANS Internet Storm Center said the update was causing "widespread problems" and said it received reports about "networks with thousands of down machines and organizations who had to shut down for business until this is fixed."
+Analyst Rob Enderle said the update "pretty much took Intel down today". Mr Enderle was at the chip giant's HQ for a meeting when the widespread crash started to hit the computers of the people with whom he sat.
+"We believe that this incident has impacted less than one half of one percent of our enterprise accounts globally," said a statement from McAfee, adding that an even smaller percentage of its consumer customers were hit.
+It said it removed the update "within hours" and released an updated file free of the mistake. It also issued a "sincere apology" for the inconvenience caused.
+
+Page last updated on Sun Apr 10 22:37:39 CEST 2016

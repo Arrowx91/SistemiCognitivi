@@ -1,0 +1,23 @@
+Mozilla abbandona Thunderbird
+Ma ne garantirà sicurezza e stabilità
+Il client di posta elettronica, usato da 20 milioni di persone nel mondo, non sarà più Sviluppato. Sullo sfondo le nuove prospettive di Mozilla, sempre più rivolte al mobile e alla creazione di un proprio sistema operativo
+Lo leggo dopo
+
+APPROFONDIMENTI
+ARTICOLO
+Google finisce sotto processo
+L'accusa è violazione della privacy
+ARTICOLO
+Windows 8 in vendita a ottobre
+con aggiornamento diretto da XP
+ARTICOLO
+Google a favore dei diritti gay
+al via l'iniziativa "Legalize love"
+
+FOTO
+Windows 8, 40 euro per l'upgrade da Xp, Vista e 7
+NON SARA' una scomparsa definitiva. Ma un lento e inesorabile abbandono. Ma il risultato è lo stesso: Mozilla ha deciso di non implementare più lo sviluppo di Thunderbird, il proprio client di posta elettronica. La decisione, circolata in rete nelle scorse settimane, trova conferma proprio dagli sviluppatori del browser open source. Che dicono: "Non lavoreremo più per innovare Thunderbird. Ma ne garantiremo sicurezza e stabilità". E l'impegno diventa indiretto. Infatti sarà garantita solo l'infrastruttura software per consentire l'integrazione di Thunderbird con le funzionalità che di volta in volta saranno create dalla community di Mozilla.
+
+Insomma, Mozilla continuerà a tenere in ordine il codice del suo client. Anche perché gli utilizzatori di Thunderbird sono circa 20 milioani in tutto il mondo. E tra questi, una percentuale consistente è rappresentata da aziende e professionisti che usano il client ogni giorno. E si tratta di un cambio di prospettiva che fa luce sui nuovi "orientamenti strategici" di Mozilla: che già da tempo ha deciso di puntare sul pianeta mobile, e soprattutto sull'annunciato Firefox OS 1. 
+
+Il rallentamento dello sviluppo non inizierà comunque in modo immediato. I progetti già messi in campo saranno ultimati. Ciò significa che fino alla seconda metà del 2013 si continuerà a lavorare sul client rilasciando la versione 14 prima ed alcune ulteriori release in seguito. Per Jb Piacentino, tra i "padri" di Thunderbird, "siamo giunti alla conclusione che l'innovazione continua su Thunderbird non è il miglior uso delle nostre risorse". Tuttavia, visto che Thunderbird è uno dei pochi software veramente liberi e open source multi-piattaforma "vogliamo difendere questi valori". A cambiare sarà il modello della governance del progetto: "Proponiamo di discutere pubblicamente il futuro del client" si legge sul blog ufficiale 2 di Piacentino. Tutto per elaborare una exit strategy entro l'inizio di settembre.

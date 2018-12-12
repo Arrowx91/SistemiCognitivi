@@ -1,0 +1,20 @@
+# 
+# http://www.bbc.com/news/technology-35996566
+# 
+
+US pushes Apple for access to iPhones in criminal cases
+
+The US Department of Justice has said it will pursue its request for Apple to help unlock an iPhone that is part of a drugs case in New York.
+A letter filed to a local court said the government "continues to require Apple's assistance".
+In Boston, unsealed court papers show a judge ordered Apple to assist authorities in another criminal case.
+The judge ruled it was "reasonable" to ask Apple to extract data from the device.
+US Magistrate Judge Marianne Bowler made the Boston order in February, but it was only unsealed on Friday.
+In a separate case last month, the FBI dropped a court order demanding Apple help investigators unlock the iPhone of San Bernardino killer Syed Farook.
+The FBI had said it was able to gain access to the device independently. This method is said only work on certain older models of the iPhone.
+The device in the Boston case - owned by alleged gang member Desmond Crawford - is a later-model iPhone.
+In February, a judge ruled that Apple could not be forced to give access to the phone in the New York case.
+The judge denied a motion by the Justice Department - a decision which was followed by a government appeal.
+Jun Feng, who owned the iPhone, pleaded guilty to taking part in a methamphetamine distribution conspiracy last year.
+Authorities have said they still wish to unlock the device, however, as part of an ongoing investigation into the conspiracy.
+
+Page last updated on Sun Apr 10 22:37:39 CEST 2016

@@ -1,0 +1,1621 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#"
+     xml:base="http://www.semanticweb.org/arrow/ontologies/2018/9/Film"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Film="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film">
+        <dc:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Giulia Monticone</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">18-12-2018</dc:date>
+        <dc:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Esercitazione sull&apos;utilizzo di Protègè incentrata sul dominio dei Film</dc:description>
+        <dc:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">FilmOntology</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#compose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#compose">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#composedOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Series"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#composedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Series"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#isActor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#isActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#isActor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasOscar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasOscar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Classe contenente la lista di attori protagonisti nei film</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Africa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Africa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#America -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#America">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Argentina"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Bahamas"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Brazile"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Canada"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Caribbean"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hawaii"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Mexico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewMexico"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Asia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Asia">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#China"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Japan"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Jordan"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thailand"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Classe contenente la lista delle categorie alle quali appartengono i film</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Classe contenente la lista di Paesi</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm">
+        <rdfs:comment>Classe contenente la lista dei Paesi in cui sono stati girati i film</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielGraig -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielGraig">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Europa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Europa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Austria"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CzechRepublic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hungary"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Iceland"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Ireland"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Norway"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spain"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Switzerland"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSingle"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Classe contenente la lista dei film presenti nell&apos;ontologia</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film1980-2000 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film1980-2000">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#date"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Classe in cui vengono raggruppati i film usciti nell&apos;intervallo di anni tra il 1980 e il 2000</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#compose"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSingle"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Classe nella quale vengono raggruppati i film che fanno parte delle Series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSingle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSingle">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries"/>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Classe nella quale vengono raggruppati i film che NON fanno parte delle Series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmStartTitleLetterT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmStartTitleLetterT">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#title"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:pattern>[T][a-z ]*</xsd:pattern>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Classe in cui vengono raggruppati i film che hanno il titolo che comincia con la lettere T</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InAfrica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InAfrica">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Africa"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InAmerica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InAmerica">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#America"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InAsia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InAsia">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Asia"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InEuropa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InEuropa">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Europa"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InOceania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#InOceania">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#filmedIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Oceania"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CountryFilm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Oceania -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Oceania">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Australia"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewZeland"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasActor"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OscarWin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OscarWin">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasOscar"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Classe in cui vengono raggruppati i film che hanno vinto più di tre oscar</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Series -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Series">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#composedOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>Classe in cui vengono raggruppati i titoli delle serie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#hasCategory"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AnewHope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AnewHope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1977</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>A new hope</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Argentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Argentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AtWorldsEnd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AtWorldsEnd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Bahamas"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Caribbean"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hawaii"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2007</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>At worlds end</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AttackOfTheClones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AttackOfTheClones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spain"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>Attack of the clones</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Austria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Austria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Bahamas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Bahamas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#BladeRunner2049 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#BladeRunner2049">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries"/>
+            </owl:Class>
+        </rdf:type>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hungary"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Iceland"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Mexico"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spain"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasOscar>
+        <title>Blade runner 2049</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Brazile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Brazile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Caribbean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Caribbean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CasinòRoyal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CasinòRoyal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Bahamas"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CzechRepublic"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>Casinò royal</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CzechRepublic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CzechRepublic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMansChest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMansChest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Bahamas"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Caribbean"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2006</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOscar>
+        <title>Dead mans chest</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMenTellNoTales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMenTellNoTales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Australia"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>Dead men tell no tales</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hawaii -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hawaii">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hungary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hungary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Iceland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Iceland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#IndianaJones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#IndianaJones">
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RaidersOfTheLostArk"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheKingdomOfTheCrystalSkull"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastCrusade"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTempleOfDoom"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Ireland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Jordan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Jordan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Mexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewMexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewMexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewZeland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewZeland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Norway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Norway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OnStrangerTides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OnStrangerTides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Hawaii"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2011</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>On stranger tides</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Actor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#PiratesOfTheCarabbean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#PiratesOfTheCarabbean">
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AtWorldsEnd"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMansChest"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMenTellNoTales"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OnStrangerTides"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheCurseOfTheBlackPearl"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#QuantumOfSolace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#QuantumOfSolace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Austria"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Mexico"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>Quantum of solace</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RaidersOfTheLostArk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RaidersOfTheLostArk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1981</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasOscar>
+        <title>Raiders of the lost ark</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ReturnOfTheJedi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ReturnOfTheJedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1983</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOscar>
+        <title>Return of the Jedi</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RevengeOfTheSith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RevengeOfTheSith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#China"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Switzerland"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2005</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>Revenge of the Sith</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Skyfall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Skyfall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#China"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Japan"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Turkey"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasOscar>
+        <title>Skyfall</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spectre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spectre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Mexico"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOscar>
+        <title>Spectre</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#StarWars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#StarWars">
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AnewHope"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AttackOfTheClones"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ReturnOfTheJedi"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RevengeOfTheSith"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheEmpireStrikesBack"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheForceAwakens"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastJedi"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ThePhantomMenace"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Switzerland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Switzerland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thailand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thailand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheCurseOfTheBlackPearl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheCurseOfTheBlackPearl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Caribbean"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>The curse of the black pearl</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheEmpireStrikesBack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheEmpireStrikesBack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Norway"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1980</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasOscar>
+        <title>The empire strikes back</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheFellowshipOfTheRing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheFellowshipOfTheRing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewZeland"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasOscar>
+        <title>The fellowship of the ring</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheForceAwakens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheForceAwakens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Iceland"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Ireland"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>The force awakens</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheImitationGame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheImitationGame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries"/>
+            </owl:Class>
+        </rdf:type>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOscar>
+        <title>The imitation game</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheKingdomOfTheCrystalSkull -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheKingdomOfTheCrystalSkull">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>The kingdom of the crystal skull</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastCrusade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastCrusade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1989</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOscar>
+        <title>The last crusade</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastJedi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastJedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Ireland"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>The last Jedi</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLordOfTheRings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLordOfTheRings">
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheFellowshipOfTheRing"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheReturnOfTheKing"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTwoTowers"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ThePhantomMenace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ThePhantomMenace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Italy"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>The phantom menace</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheReturnOfTheKing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheReturnOfTheKing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewZeland"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2003</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</hasOscar>
+        <title>The return of the king</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTempleOfDoom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTempleOfDoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1984</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasOscar>
+        <title>The temple of doom</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTwoTowers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTwoTowers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewZeland"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2002</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasOscar>
+        <title>The two towers</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Category"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Trascendence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Trascendence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Film"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#FilmSeries"/>
+            </owl:Class>
+        </rdf:type>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#NewMexico"/>
+        <filmedIn rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA"/>
+        <hasActor rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller"/>
+        <date rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</date>
+        <hasOscar rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasOscar>
+        <title>Trascendence</title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Tunisia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Turkey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Turkey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#UK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/arrow/ontologies/2018/9/Film#007JamesBond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#007JamesBond">
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CasinòRoyal"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#QuantumOfSolace"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Skyfall"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spectre"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy"/>
+        <hasCategory rdf:resource="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Action"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Adventure"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Comedy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Drammatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Fantasy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ScienceFiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Storic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Thriller"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AnewHope"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AttackOfTheClones"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ReturnOfTheJedi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RevengeOfTheSith"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheEmpireStrikesBack"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheForceAwakens"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastJedi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#ThePhantomMenace"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#AtWorldsEnd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMansChest"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DeadMenTellNoTales"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OnStrangerTides"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheCurseOfTheBlackPearl"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CarrieFisher"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#DanielCraig"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#HarrisonFord"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#JonnyDepp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#KeiraKnightley"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#OrlandoBloom"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#CasinòRoyal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#QuantumOfSolace"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Skyfall"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#Spectre"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#IndianaJones"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#PiratesOfTheCarabbean"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#StarWars"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLordOfTheRings"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#007JamesBond"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#RaidersOfTheLostArk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheKingdomOfTheCrystalSkull"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheLastCrusade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTempleOfDoom"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheFellowshipOfTheRing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheReturnOfTheKing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/arrow/ontologies/2018/9/Film#TheTwoTowers"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

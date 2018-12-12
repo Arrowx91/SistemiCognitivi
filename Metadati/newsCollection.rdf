@@ -1,0 +1,92 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <rdf:Description rdf:about="http://www.bbc.com/news/technology-35656553">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>fbi, apple, cook</dc:subject>
+    <dc:description>Apple boss Tim Cook has hit back at the FBI over the handling of a court order to help unlock the iPhone of San Bernardino killer Syed Rizwan Farook.</dc:description>
+    <dc:title>Apple boss Tim Cook hits back at FBI investigation</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/business/8643441.stm">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>bank, government, raise</dc:subject>
+    <dc:description>The Irish Republic's biggest lender said it would raise up to 1.9bn euros through a rights issue.</dc:description>
+    <dc:title>Bank of Ireland to raise 3.4bn euros.</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.bbc.com/travel/story/20150511-why-you-should-never-drink-whisky-on-the-rocks">
+    <dc:creator>Anakin Skywalker</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>whisky, malt, islay</dc:subject>
+    <dc:description>The Thirsty Explorer heads to the Scottish island of Islay where he learns the important differences between malt and whisky – and how to order it in a bar.</dc:description>
+    <dc:title>Why you Should Never Drink Whisky on the Rocks</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/technology/8643844.stm">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>disk, floppy, sell</dc:subject>
+    <dc:description>Sony has signalled what could be the final end of the venerable floppy disk.</dc:description>
+    <dc:title>Sony to stop selling floppy disks from 2011.</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.bbc.com/news/technology-35996566">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>apple, iphone, case</dc:subject>
+    <dc:description>The US Department of Justice has said it will pursue its request for Apple to help unlock an iPhone that is part of a drugs case in New York.</dc:description>
+    <dc:title>US pushes Apple for access to iPhones in criminal cases</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/entertainment/arts_and_culture/8644533.stm">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>art, artist, british</dc:subject>
+    <dc:description>Some of the UK's most esteemed artists are to be showcased at the latest British Art Show - the survey of contemporary art held every five years.</dc:description>
+    <dc:title>British Art Show's contemporary talent revealed</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/entertainment/8639142.stm">
+    <dc:creator>Anakin Skywalker</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>disney, monster, pixar</dc:subject>
+    <dc:description>Pixar's 2001 film Monsters Inc - about monsters who scare kids for a living - is to have a sequel, the Disney studio has announced.</dc:description>
+    <dc:title>Disney announces Monsters Inc sequel</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/technology/8636985.stm">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>update, mcafee, hit</dc:subject>
+    <dc:description>Thousands of PCs around the world have been paralysed by a security update that wrongly labelled part of Windows as a virus.</dc:description>
+    <dc:title>Security update hits Windows PCs.</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/business/8638222.stm">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>will, russian, build</dc:subject>
+    <dc:description>It may not have California's weather, ocean views or coffee culture, but a Moscow suburb will be the site of Russia's version of Silicon Valley.</dc:description>
+    <dc:title>Russia creates its own Silicon Valley.</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://news.bbc.co.uk/2/hi/entertainment/8643539.stm">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated at 08:34 GMT, Monday, 26 April 2010 09:34 UK</dc:date>
+    <dc:subject>release, avatar, film</dc:subject>
+    <dc:description>Avatar has become the fastest-selling home entertainment release of all time in North America, shifting 6.7 million DVDs and Blu-rays in four days.</dc:description>
+    <dc:title>Avatar breaks US DVD sales record</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.bbc.com/news/science-environment-26786142">
+    <dc:creator>Giulia Monti</dc:creator>
+    <dc:date>Page last updated on Sun Apr 10 22:37:39 CEST 2016</dc:date>
+    <dc:subject>shark, attack, species</dc:subject>
+    <dc:description>Sharks have patrolled the oceans for at least 400 million years and evolved into a huge range of remarkable species.</dc:description>
+    <dc:title>Can science stop sharks attacking humans?</dc:title>
+    <dc:publisher>BBC</dc:publisher>
+  </rdf:Description>
+</rdf:RDF>
